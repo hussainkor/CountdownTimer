@@ -5,7 +5,7 @@ const minute = document.getElementById('minute');
 const second = document.getElementById('second');
 const titled = document.getElementById('title');
 
-const republicDay = new Date('14 Feb 2024');
+const republicDay = new Date('01 Jan 2025');
 
 const countdown = function () {
     //const targetDate = new Date(republicDay);
@@ -33,7 +33,7 @@ const countdownInterval = setInterval(countdown, 1000);
 
 setTimeout(() => {
     clearInterval(countdownInterval);
-    titled.innerHTML = 'Its Valentines Day!';
+    titled.innerHTML = 'Happy New Year!';
 }, (republicDay - new Date()) / 1000)
 
 
